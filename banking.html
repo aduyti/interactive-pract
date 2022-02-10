@@ -12,23 +12,40 @@
 </head>
 
 <body>
-    <h1 class="text-center text-5xl my-10 font-bold">Let's Check <span class="font-bolder text-purple-600">My
-            Money</span>
-    </h1>
+    <header>
+        <h1 class="text-center text-5xl my-10 font-semibold">Let's Check <span class="font-bold text-purple-600">My
+                Money</span>
+        </h1>
+    </header>
+
 
     <section>
         <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
             <div class="bg-blue-400 p-8 rounded-lg">
                 <h3 class="text-white text-2xl pb-2 font-bold">Deposit</h3>
-                <h3 class="text-white text-3xl font-medium">$<span id="deposit">00</span></h3>
+                <h3 class="text-white text-3xl font-medium">$<span id="current-deposit">00</span></h3>
             </div>
             <div class="bg-red-400 p-8 rounded-lg">
                 <h3 class="text-white text-2xl pb-2 font-bold">Withdraw</h3>
-                <h3 class="text-white text-3xl font-medium">$<span id="withdraw">00</span></h3>
+                <h3 class="text-white text-3xl font-medium">$<span id="current-withdraw">00</span></h3>
             </div>
             <div class="bg-yellow-400 p-8 rounded-lg">
                 <h3 class="text-white text-2xl pb-2 font-bold">Balance</h3>
-                <h3 class="text-white text-3xl font-medium">$<span id="total">3000</span></h3>
+                <h3 class="text-white text-3xl font-medium">$<span id="balance">3000</span></h3>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto my-4">
+            <div class="bg-blue-200 p-8 rounded-lg">
+                <h3 class="text-zinc-700 text-3xl font-extrabold">Deposit</h3>
+                <input id="deposit-amount" type="text" class="border-2 border-gray-700 rounded-xl px-4 py-1 my-4">
+                <button id="deposit" class="bg-red-400 px-4 py-2 font-medium text-gray rounded-xl">Deposit</button>
+            </div>
+            <div class="bg-yellow-200 p-8 rounded-lg">
+                <h3 class="text-zinc-700 text-3xl font-extrabold">Withdraw</h3>
+                <input id="withdraw-amount" type="text" class="border-2 border-gray-700 rounded-xl px-4 py-1 my-4">
+                <button id="withdraw" class="bg-red-400 px-4 py-2 font-medium text-gray rounded-xl">Withdraw</button>
             </div>
         </div>
     </section>
