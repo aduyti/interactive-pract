@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baaper account</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <h1 class="text-center text-5xl my-10 font-bold">Let's Check <span class="font-bolder text-purple-600">My
+            Money</span>
+    </h1>
+
+    <section>
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+            <div class="bg-blue-400 p-8 rounded-lg">
+                <h3 class="text-white text-2xl pb-2 font-bold">Deposit</h3>
+                <h3 class="text-white text-3xl font-medium">$<span id="deposit">00</span></h3>
+            </div>
+            <div class="bg-red-400 p-8 rounded-lg">
+                <h3 class="text-white text-2xl pb-2 font-bold">Withdraw</h3>
+                <h3 class="text-white text-3xl font-medium">$<span id="withdraw">00</span></h3>
+            </div>
+            <div class="bg-yellow-400 p-8 rounded-lg">
+                <h3 class="text-white text-2xl pb-2 font-bold">Balance</h3>
+                <h3 class="text-white text-3xl font-medium">$<span id="total">3000</span></h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="bank.js"></script>
+</body>
+
+</html>
